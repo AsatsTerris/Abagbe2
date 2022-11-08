@@ -2,6 +2,6 @@
 #include <stdlib.h>
 
 int main(void) {
-	printf("!!!Abgabe2");
+	printf("!!!Abgabe 2");
 	return EXIT_SUCCESS;
 }
