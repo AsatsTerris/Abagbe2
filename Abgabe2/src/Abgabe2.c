@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : Agbae2.c
- Author      : StudentT
- Version     :
- Copyright   : Hochschule Augsburg
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
