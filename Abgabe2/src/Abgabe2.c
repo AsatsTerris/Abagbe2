@@ -83,8 +83,8 @@ float mean(int* samples, int n)
 //Aufgabe 2
 void printIntArray(int* samples, int n)
 {
-	printf("samples[] = {%i,",samples[n-1]);
-	for(int i = n-2; i > 0; i--)
+	printf("samples[] = {");
+	for(int i = n-1; i > 0; i--)
 	{
 		printf("%i,",samples[i]);
 	}
@@ -162,66 +162,48 @@ printf("Ihre Eingabe: %.2f\n\n", betrag);
 betrag = betrag * 100;
 
 
-if(betrag >= 200)
+
+while(betrag >= 200)
 {
-	while(betrag >= 200)
-	{
-		betrag = betrag - 200;
-		muenze_e2++;
-	}
+	betrag = betrag - 200;
+	muenze_e2++;
 }
-if(betrag >= 100)
+while(betrag >= 100)
 {
-	while(betrag >= 100)
-	{
-		betrag = betrag - 100;
-		muenze_e1++;
-	}
+	betrag = betrag - 100;
+	muenze_e1++;
 }
-if(betrag >= 50)
+while(betrag >= 50)
 {
-	while(betrag >= 50)
-	{
-		betrag = betrag - 50;
-		muenze_c50++;
-	}
+	betrag = betrag - 50;
+	muenze_c50++;
 }
-if(betrag >= 20)
+while(betrag >= 20)
 {
-	while(betrag >= 20)
-	{
-		betrag = betrag - 20;
-		muenze_c20++;
-	}
+	betrag = betrag - 20;
+	muenze_c20++;
 }
-if(betrag >= 10)
+while(betrag >= 10)
 {
-	while(betrag >= 10)
-	{
-		betrag = betrag - 10;
-		muenze_c10++;
-	}
+	betrag = betrag - 10;
+	muenze_c10++;
 }
-if(betrag >= 5)
+while(betrag >= 5)
 {
-	while(betrag >= 5)
-	{
-		betrag = betrag - 5;
-		muenze_c5++;
-	}
+	betrag = betrag - 5;
+	muenze_c5++;
 }
-if(betrag >= 2)
+while(betrag >= 2)
 {
-	while(betrag >= 2)
-	{
-		betrag = betrag - 2;
-		muenze_c2++;
-	}
+	betrag = betrag - 2;
+	muenze_c2++;
 }
-if(betrag == 1)
+while(betrag == 1)
 {
+	betrag = betrag - 1;
 	muenze_c1++;
 }
+
 
 
 printf("Große Münzen:\n %3.i x 2€\n %3.i x 1€\n",muenze_e2,muenze_e1);
